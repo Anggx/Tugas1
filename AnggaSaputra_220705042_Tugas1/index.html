@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Karla+Tamil+Inclined:wght@400;700&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="styles\style.css">
+    <title>Landing Page</title>
+</head>
+<body>
+    <nav class="nav-link">
+        <h1>Event Olahraga Universitas</h1>
+        <button onclick="window.location.href='index.html'">Beranda</button>
+        <button onclick="tentang()">Tentang</button>
+        <button onclick="kontak()">Kontak</button>
+        <button onclick="service()">Layanan</button>
+        <button onclick="window.location.href='login.html'">Login</button> <!-- Tombol Login -->
+    </nav>
+    
+       
+    <main>
+        <div class="content">
+            <article>
+                <h2>Informasi Event</h2>
+                <p>Bergabunglah pada event olahraga universitas (𝗗𝗶𝗯𝘂𝗸𝗮 𝗨𝗻𝘁𝘂𝗸 𝗨𝗺𝘂𝗺)
+                    Kami mengundang anda untuk mendaftarkan diri anda, atau tim tim anda pada event ini
+                    yang akan diselenggarakan pada tanggal 1-10 Desember 2024, Acara ini bertujuan untuk
+                    menjunjung sportivitas dan mempererat silaturahmi kita.
+                    Adapun perlombaan yang ada di event ini antara lain adalah: Futsal, Tenis, Badminton, Basket, Panjat Tebing, dan Renang.
+                </p>
+
+            </article>
+            <article>
+                <h2>Syarat dan ketentuan</h2>
+                <ol>
+                    <li>Memiliki KTP baik Pribadi maupun anggota seluruh Tim</li>
+                    <li>Mengisi Form Pendaftaran Secara Online</li>
+                    <li>Membayar Biaya Pendaftaran Rp 60.000/Pribadi dan Rp 150.0000/Tim</li>
+                    <li>Disarankan untuk mendapatkan Pemeriksaan kesehatan terlebih dahulu</li>
+                    <li>Dilarang melakukan tindakan yang tidak Sportif</li>
+                    <li>Bersedia membayar denda apabila teridentifikasi melakukan kecurangan</li>
+                    <li>Bagi pemenang mendapatkan Hadiah Jutaan Rupiah + Sertifikat</li>
+                </ol>
+                <p>
+                    Ayo Daftarkan segera sebelum pendaftaran di tutup!!</p>
+            </article>
+        </div>
+        <section>
+            <aside>
+                <img src="styles/image.jpg">
+            </aside>
+            <div class="daftar"><button onclick="regist()"><b>Daftar Sekarang</b></button></div>
+        </section>
+    </main>
+        <footer>
+            <p>Tugas Mandiri  &copy; Angga Saputra Anwar</p>
+                <p>           
+                    Info lebih lanjut hubungi :
+                </p>
+                <ul class="info">
+                    <li><a href="tel:+6281260122200"><i class="fa-brands fa-whatsapp"></i></i></a></li>
+                    <li><a href="mailto:anggasaputra230904@gmail.com"><i class="fa-regular fa-envelope"></i></a></li>
+                    <li><a href="https://www.instagram.com/aangga.sptra"><i class="fa-brands fa-instagram"></i></a></li>
+                </ul>  
+        </footer>
+        <script>
+        function regist() {
+            window.location.href = "formPendaftaran.html"
+        }
+        </script>
+</body>
+</html>

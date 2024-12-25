@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulir Pendaftaran Lomba Olahraga</title>
+    <link rel="stylesheet" href="styles/style_form.css"> 
+</head>
+<body>
+
+<div class="form-container">
+    <form action="/submit" method="post">
+        <label for="name">Nama atau Nama Tim:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="cabor">Cabor Pilihan:</label>
+        <select id="cabor" name="cabor" required>
+            <option value="">--Pilih Cabor--</option>
+            <option value="futsal">Futsal</option>
+            <option value="tenis">Tenis</option>
+            <option value="badminton">Badminton</option>
+            <option value="basket">Basket</option>
+            <option value="panjat_tebing">Panjat Tebing</option>
+            <option value="renang">Renang</option>
+        </select>
+
+        <label for="phone">No HP:</label>
+        <input type="tel" id="phone" name="phone" required>
+
+        <label>Status:</label>
+        <label for="pelajar">Pelajar</label>
+        <input type="radio" id="pelajar" name="status" value="pelajar" required>
+
+        <label for="mahasiswa">Mahasiswa</label>
+        <input type="radio" id="mahasiswa" name="status" value="mahasiswa">
+
+        <label for="pekerja">Pekerja</label>
+        <input type="radio" id="pekerja" name="status" value="pekerja">
+    
+        <div id="team-members">
+            <h3>Jika Tim, List Anggota Tim:</h3>
+            <label for="member">Anggota :</label>
+            <textarea name="pesan" id="pesan" rows="3" placeholder="List Anggota"></textarea>
+
+        </div>
+        
+
+        <button onclick="Daftar()" type="submit">Daftar</button>
+    </form>
+    <script>
+        function Daftar() {
+            window.location.href = 'landingPage.html';
+            alert('form anda telah terkirim');
+        }
+    </script>
+
+</body>
+</html>
